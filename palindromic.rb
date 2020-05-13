@@ -5,11 +5,13 @@
 # Input Format: A single line of input containing the integer
 # Constraints: You are not given how big N is.
 # Output Format: Print an array of the first  palindromic primes.
-require 'pry'
-require 'prime'
+# require 'pry'
+# require 'prime'
+
 def palindromic(num)
   # lazy = (1..Float::INFINITY).lazy.select(&:odd?).drop(10).take_while
   # { |i| i < (Float::INFINITY) }
   Prime.lazy.select { |a| a.to_s == a.to_s.reverse }.first(num)
 end
 
+# p Prime.lazy.select { |a| a.to_s == a.to_s.reverse }.first(gets.to_i)
