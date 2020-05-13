@@ -8,7 +8,7 @@ def prime?(num)
   end
   true
 end
-
+p prime?(2) # true
 p prime?(1) # false
 p prime?(3) # true
 p prime?(4) # false
